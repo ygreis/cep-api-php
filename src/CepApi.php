@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace Ygreis\CepApiPhp;
 
+use Ygreis\CepApiPhp\Providers\BrasilApi;
+
 class CepApi
 {
 
@@ -14,7 +16,7 @@ class CepApi
 
         $data = $apis->wait();
 
-        var_dump($data);
+        return $data;
     }
 
 }
