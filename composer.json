@@ -2,6 +2,7 @@
     "name": "ygreis/cep-api-php",
     "description": "Busca de CEP para diversas apis públicas do Brasil",
     "license": "MIT",
+    "version": "1",
     "autoload": {
         "psr-4": {
             "Ygreis\\CepApiPhp\\": "src/"
@@ -15,6 +16,23 @@
     ],
     "require": {
         "guzzlehttp/promises": "^2.0",
-        "guzzlehttp/guzzle": "^7.8"
+        "guzzlehttp/guzzle": "^7.8",
+        "php": "^7.2.5 || ^8.0"
+    },
+    "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.8.2"
+    },
+    "extra": {
+        "bamarni-bin": {
+            "bin-links": true,
+            "forward-command": false
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
     }
 }
