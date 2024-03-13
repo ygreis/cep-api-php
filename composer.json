@@ -1,0 +1,20 @@
+{
+    "name": "ygreis/cep-api-php",
+    "description": "Busca de CEP para diversas apis públicas do Brasil",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ygreis\\CepApiPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yallison Gabriel Reis",
+            "email": "gabrielyallison2012@hotmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/promises": "^2.0",
+        "guzzlehttp/guzzle": "^7.8"
+    }
+}
