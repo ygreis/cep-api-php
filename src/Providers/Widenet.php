@@ -6,7 +6,7 @@ namespace Ygreis\CepApiPhp\Providers;
 
 use GuzzleHttp\Promise\Promise;
 
-class BrasilApi
+class Widenet
 {
     public static function getAddress(string $cep)
     {
@@ -14,10 +14,10 @@ class BrasilApi
             $client = new \GuzzleHttp\Client();
             $response = $client->request(
                 'GET',
-                "https://brasilapi.com.br/api/cep/v1/$cep", [
+                "https://cdn.apicep.com/file/apicep/$cep.json", [
                 'mode' => 'cors',
                 'headers' => [
-                    'Accept' => 'application/json;charset=utf-8',
+                    'Accept' => 'application/json',
                 ]
             ]);
 
